@@ -1,7 +1,4 @@
 gsap.registerPlugin(ScrollTrigger);
-window.onbeforeunload = function () {
-  window.scrollTo(0,0);
-};
 ScrollTrigger.create({
 trigger: ".middle",
 start: 'top top',
