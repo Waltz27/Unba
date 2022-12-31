@@ -81,7 +81,7 @@ gsap.to('.flake',{
       this.targets().forEach(elem => elem.classList.add("fall"));
       },
     scrollTrigger:{
-      trigger:'.snow-container',
+      trigger:'.gallery',
       start:"top top",
     }
 })
