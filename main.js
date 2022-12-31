@@ -97,7 +97,7 @@ gsap.to(".TwitterCard", {
   this.targets().forEach(elem => elem.classList.add("expand"));
   },
   scrollTrigger:{
-    trigger:'.TwitterCard',
+    trigger:'.ttExpand',
     start:"top top",
   }
 })
