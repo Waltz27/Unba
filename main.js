@@ -103,12 +103,24 @@ gsap.to(".TwitterCard", {
     start:"top top",
   }
 })
-gsap.to('.youtube',2,{
+gsap.to('.youtube',{
   opacity:1,
   ease:"ease-in",
   scrollTrigger:{
     trigger:".youtube",
     start:"-20% top",
+  }
+})
+gsap.to(".playlist",2.5,{
+  opacity:1,
+  stagger:{
+    each: 0.8,
+    from:"start",
+    ease:"ease-out",
+  },
+  scrollTrigger:{
+    trigger:".youtube",
+    start:"top top",
   }
 })
 const observer = new IntersectionObserver((entries)=>{

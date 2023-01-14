@@ -1,6 +1,6 @@
 @media (max-width: 900px){
 .headerIntro{
-    display: none;
+display: none;
 }
 }
 /*Html/body*/
@@ -253,43 +253,43 @@ filter: blur(0px);
 transition: 0.5s ease;
 }
 .horizontal-one{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/1_SIlegfOBe.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837903035);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/1_SIlegfOBe.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837903035);
 }
 .horizontal-two{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/2_HGolETi29.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902443);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/2_HGolETi29.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902443);
 }
 .horizontal-three{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/3_QgISd1V2j.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902325);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/3_QgISd1V2j.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902325);
 }
 .horizontal-four{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/4_yGO-LYlt17.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902520);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/4_yGO-LYlt17.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902520);
 }
 .horizontal-five{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/5_ivF2l0TVV4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902584);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/5_ivF2l0TVV4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902584);
 }
 .horizontal-six{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/6_Y0h5tY2wZ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902668);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/6_Y0h5tY2wZ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902668);
 }
 .horizontal-seven{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/7_I_qCCq5Ikv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902658);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/7_I_qCCq5Ikv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902658);
 }
 .horizontal-eight{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/8_LxuVl59sLH.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902299);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/8_LxuVl59sLH.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902299);
 }
 .horizontal-nine{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/9_Lw0Vy1Wu9.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902270);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/9_Lw0Vy1Wu9.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902270);
 }
 .horizontal-ten{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/10_N0wT8lHKSx.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902353);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/10_N0wT8lHKSx.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902353);
 }
 .horizontal-eleventh{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/11_YFktlqRE6.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837905849);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/11_YFktlqRE6.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837905849);
 }
 .horizontal-twelfth{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/12_MFZfdBLtw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837905294);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/12_MFZfdBLtw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837905294);
 }
 .horizontal-thirteen{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/13_fj-Q1true.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837905717);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/13_fj-Q1true.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837905717);
 }
 .one{
 transform: translateX(-6rem);
@@ -747,72 +747,72 @@ cursor: pointer;
 }
 /*Youtube*/
 .youtube{
-    opacity: 0;
-    margin-top: 60vh;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    font-family: 'Ubuntu', sans-serif;
+opacity: 0;
+margin-top: 60vh;
+height: 100vh;
+width: 100vw;
+display: grid;
+font-family: 'Ubuntu', sans-serif;
 }
 .yt-title{
-    width: 100vw;
-    height: 10vh;
-    display: grid;
-    place-items: center;
-    justify-self: center;
-    font-size: 30px;
-    background-color: white;
-    border-top-right-radius:20px ;
-    border-top-left-radius:20px ;
-    
+width: 100vw;
+height: 10vh;
+display: grid;
+place-items: center;
+justify-self: center;
+font-size: 30px;
+background-color: white;
+border-top-right-radius:20px ;
+border-top-left-radius:20px ;
+
 }
 .yt-title h1{
-    position: absolute;
-    color: #151515;
+position: absolute;
+color: #151515;
 }
 .yt-logo{
-    color: red;
-    font-size: 60px;
-    position: relative;
-    left: -160px;
-    transition: 2s; 
+color: red;
+font-size: 60px;
+position: relative;
+left: -160px;
+transition: 2s; 
 }
 .cover-playlist:hover{
-    opacity: 0.5;
-    transition: 0.4s ease-out;
-    cursor: pointer;
+opacity: 0.5;
+transition: 0.4s ease-out;
+cursor: pointer;
 }
 .playlist{
-    background-size: cover;
-    width: 15vw;
-    height: 8vw;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-    border: 2.5px solid var(--color);
-    opacity: 1;
+background-size: cover;
+width: 15vw;
+height: 8vw;
+border-radius: 10px;
+cursor: pointer;
+position: relative;
+border: 2.5px solid var(--color);
+opacity: 0;
 }
 .playlist:hover{
-    filter: brightness(0.6);
-    transition: 0.3s ease-in; 
+filter: brightness(0.6);
+transition: 0.3s ease-in; 
 }
 .playlist-one{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/thumbnail_C7wBcNtch.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673613132883);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/thumbnail_C7wBcNtch.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673613132883);
 }
 .playlist-two{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/thumbnail_3_oS2VOYFLR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673613132027)
+background-image: url(https://ik.imagekit.io/4bkho8jgt/thumbnail_3_oS2VOYFLR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673613132027)
 }
 .playlist-three{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/thumbnail_2_oMs7vittz.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673613132060);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/thumbnail_2_oMs7vittz.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673613132060);
 }
 .playlist-four{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/3_QgISd1V2j.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902325);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/3_QgISd1V2j.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902325);
 }
 .playlist-five{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/8_LxuVl59sLH.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902299);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/8_LxuVl59sLH.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902299);
 }
 .playlist-six{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/yt__1__4AHi_Vvj2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837983941);
+background-image: url(https://ik.imagekit.io/4bkho8jgt/yt__1__4AHi_Vvj2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837983941);
 }
 .yt-background{
 width: 100vw;
@@ -821,29 +821,29 @@ background: rgba(255,255,255,0.65);
 transition: 0.8s ease-out;
 }
 .yt-playlist{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+position: relative;
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
 }
 .original-song{
-    height: 80vh;
-    margin: auto;
-    width: 90vw;
-    background-color: #151515;
-    place-self: center;
-    border-radius: 20px;
+height: 80vh;
+margin: auto;
+width: 90vw;
+background-color: #151515;
+place-self: center;
+border-radius: 20px;
 }
 .song-play{
-    font-size: 4vw;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    top: 45%;
-    left: 48%;
+font-size: 4vw;
+color: white;
+cursor: pointer;
+position: relative;
+top: 45%;
+left: 48%;
 }
 .song-play:hover{
-    filter: brightness(0.8);
+filter: brightness(0.8);
 }
 /*Animations*/
 @keyframes move {
@@ -937,5 +937,5 @@ overflow: hidden;
 overflow: hidden;
 }
 .invisible{
-    display: none;
+display: none;
 }
