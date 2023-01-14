@@ -369,10 +369,9 @@ width: 100vw;
 border: 3px solid var(--border-color);	
 border-radius: 2vh;
 background-color: #38444d;
-opacity: 0;
+opacity: 1;
 font-size: 0.7em;
 font-family: 'M PLUS 1', sans-serif;
-opacity: 1;
 transition: 7s ease-in-out;
 }
 .twitter-header {
@@ -513,6 +512,94 @@ padding: 10px;
 .twitter-button {
 padding: 10px;
 }
+/*Youtube*/
+.youtube{
+opacity: 0;
+margin-top: 10vh;
+height: 100vh;
+width: 100vw;
+display: grid;
+font-family: 'Ubuntu', sans-serif;
+}
+.yt-title{
+width: 100vw;
+height: 10vh;
+display: grid;
+place-items: center;
+font-size: 30px;
+background-color: white;
+border-top-right-radius:20px ;
+border-top-left-radius:20px ;
+
+}
+.yt-title h1{
+position: absolute;
+color: #151515;
+justify-self: center;
+}
+.yt-logo{
+color: red;
+font-size: 2rem;
+position: relative;
+left: -9rem;
+transition: 2s; 
+}
+.playlist{
+background-size: cover;
+width: 30vw;
+height: 16vw;
+border-radius: 10px;
+margin-top: 60px;
+position: relative;
+border: 2.5px solid var(--color);
+opacity: 1;
+}
+.playlist-one{
+background-image: url(https://ik.imagekit.io/4bkho8jgt/thumbnail_C7wBcNtch.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673613132883);
+}
+.playlist-two{
+background-image: url(https://ik.imagekit.io/4bkho8jgt/thumbnail_3_oS2VOYFLR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673613132027)
+}
+.playlist-three{
+background-image: url(https://ik.imagekit.io/4bkho8jgt/thumbnail_2_oMs7vittz.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673613132060);
+}
+.playlist-four{
+background-image: url(https://ik.imagekit.io/4bkho8jgt/3_QgISd1V2j.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902325);
+}
+.playlist-five{
+background-image: url(https://ik.imagekit.io/4bkho8jgt/8_LxuVl59sLH.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902299);
+}
+.playlist-six{
+background-image: url(https://ik.imagekit.io/4bkho8jgt/yt__1__4AHi_Vvj2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837983941);
+}
+.yt-background{
+width: 100vw;
+height: 100vh;
+background: rgba(255,255,255,0.65);
+transition: 0.8s ease-out;
+}
+.yt-playlist{
+position: relative;
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+.original-song{
+height: 50vh;
+margin: auto;
+width: 90vw;
+background-color: #151515;
+place-self: center;
+border-radius: 20px;
+}
+.song-play{
+font-size: 4vw;
+color: white;
+cursor: pointer;
+position: relative;
+top: 45%;
+left: 48%;
+}
 /*Animations*/
 @keyframes move {
 0% { transform: rotate(0deg)}
@@ -571,28 +658,14 @@ opacity: 0;
 }
 }
 /*End&Misc*/
-
 .end{
-height: 100vh;
+margin-top: 10vh;
+height: 10vh;
 width: 100vw;
 display: grid;
 place-items: center;
 font-size: 0.7rem;
 font-family: 'Titan One', cursive;
-}
-.under-construct{
-height: 100px;
-width: 100px;
-display: grid;
-place-items: center;
-font-size: 80px;
-border-radius: 50%;
-background-color: white;
-}
-.sorry{
-display: flex;
-flex-direction: column;
-color:white;
 }
 .copyright{
 font-size: 0.5rem!important;

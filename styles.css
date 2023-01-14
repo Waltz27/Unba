@@ -903,6 +903,20 @@ opacity: 0;
 }
 }
 /*End&Misc*/
+.end{
+margin-top: 10vh;
+height: 10vh;
+width: 100vw;
+display: grid;
+place-items: center;
+font-size: 0.7rem;
+font-family: 'Titan One', cursive;
+}
+.copyright{
+font-size: 0.5rem!important;
+opacity: 0.85;
+color: #151515;
+}
 .hidden{
 opacity: 0;
 transition: 1.3s ease-in-out;
