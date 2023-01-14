@@ -48,7 +48,9 @@ timeline
   })
   .to('.menu-position',0.7,{
     opacity:1,
-    ease:"ease-in"
+    y:'80px',
+    x:"80px",
+    ease:"ease-in",
   })
   .to('.gallery',{
       opacity:1,
@@ -101,43 +103,12 @@ gsap.to(".TwitterCard", {
     start:"top top",
   }
 })
-gsap.to('.flake',{
-  onComplete: function() {
-    this.targets().forEach(elem => elem.classList.add("fall"));
-    },
-  scrollTrigger:{
-    trigger:'.snow-container',
-    start:"top top",
-  }
-})
-gsap.to('.snow-text',{
+gsap.to('.youtube',2,{
   opacity:1,
-  y:'50',
-  duration:3,
   ease:"ease-in",
   scrollTrigger:{
-    trigger:'.snow-container',
-    start:"top top",
-  }
-})
-gsap.to('.santa-uki',{
-  opacity:1,
-  x:'10vw',
-  filter:blur(6),
-  delay:2,
-  ease:"ease-in",
-  scrollTrigger:{
-    trigger:'.snow-container',
-    start:"top top",
-  }
-})
-gsap.to('.present-box',{
-  onComplete: function() {
-    this.targets().forEach(elem => elem.classList.add("bounce"));
-    },
-  scrollTrigger:{
-    trigger:'.gift',
-    start:"top top",
+    trigger:".youtube",
+    start:"-20% top",
   }
 })
 const observer = new IntersectionObserver((entries)=>{
@@ -174,53 +145,9 @@ function activeLink(){
 list.forEach((item)=>
 item.addEventListener('click',activeLink)
 )
-
-const present=document.querySelector('.present-box');
-const cake = document.querySelector('.cake-container');
-const topbox=document.querySelector('.top');
-const light =document.querySelector('.gift');
-const birthdayText = document.querySelector('.birthday-text');
-const eatenPart=document.querySelector('.layers');
-const decorate= document.querySelector('.display');
-const miniUki = document.querySelector('.mini-uki');
-const table=document.querySelector('.table');
-const dish=document.querySelector('.dish');
-const snows=document.querySelector('.snows');
-const flake=document.querySelector('.flake');
-present.onclick=function(){
-  present.classList.remove('bounce')
-  light.classList.add('turn-off')
-  topbox.classList.add('fly-up')
-  table.classList.add('table-up')
-  dish.classList.add('dish-up')
-  cake.classList.add('visible')
-  eatenPart.classList.remove('invisible')
-  eatenPart.classList.add('selected')
-  present.classList.add('invisible')
-  audio.load();
-  audio.play();
-}
-eatenPart.onclick=function(){
-  decorate.classList.add('invisible')
-  eatenPart.classList.add('invisible')
-  miniUki.classList.remove('invisible')
-  miniUki.classList.add('uki-falling')
-  audio.pause();
-  audio.currentTime = 0;
-}
-miniUki.onclick=function(){
-  birthdayText.classList.remove('invisible');
-  miniUki.classList.remove('uki-falling');
-  miniUki.classList.add('jump')
-  table.classList.add('invisible');
-  dish.classList.add('invisible');
-  snows.classList.remove('overflow');
-}
 Draggable.create('#drag',{
   bounds:'.body',
 });
-
-
 //ほんとにすみませんん！！！ＷＷ//
 //もっといい方法を見つけるために努力します。//
 const v1=document.querySelector('.horizontal-one');

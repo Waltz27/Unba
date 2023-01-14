@@ -76,46 +76,6 @@ scrollTrigger:{
     start:"top top",
 }
 })
-gsap.to('.flake',{
-    onComplete: function() {
-      this.targets().forEach(elem => elem.classList.add("fall"));
-      },
-    scrollTrigger:{
-      trigger:'.gallery',
-      start:"top top",
-    }
-})
-gsap.to('.snow-text',{
-opacity:1,
-y:'50',
-duration:3,
-ease:"ease-in",
-scrollTrigger:{
-    trigger:'.snow-container',
-    start:"top top",
-}
-})
-gsap.to('.santa-uki',{
-opacity:1,
-x:'10vw',
-filter:blur(6),
-delay:2,
-ease:"ease-in",
-scrollTrigger:{
-    trigger:'.snow-container',
-    start:"top top",
-}
-})
-gsap.to('.present-box',{
-onComplete: function() {
-    this.targets().forEach(elem => elem.classList.add("bounce"));
-    },
-scrollTrigger:{
-    trigger:'.gift',
-    start:"top top",
-}
-})
-
 const observer = new IntersectionObserver((entries)=>{
 entries.forEach((entry)=>{
     if(entry.isIntersecting){
@@ -127,42 +87,3 @@ entries.forEach((entry)=>{
 });
 const hiddenElement =document.querySelectorAll('.hidden');
 hiddenElement.forEach((el)=> observer.observe(el));
-
-const present=document.querySelector('.present-box');
-const cake = document.querySelector('.cake-container');
-const topbox=document.querySelector('.top');
-const light =document.querySelector('.gift');
-const birthdayText = document.querySelector('.birthday-text');
-const eatenPart=document.querySelector('.layers');
-const decorate= document.querySelector('.display')
-const miniUki = document.querySelector('.mini-uki')
-const audio=document.getElementById('Happy-birthday');
-const table=document.querySelector('.table');
-const dish=document.querySelector('.dish');
-const snows=document.querySelector('.snows')
-present.onclick=function(){
-  present.classList.remove('bounce')
-  light.classList.add('turn-off')
-  topbox.classList.add('fly-up')
-  table.classList.add('table-up')
-  dish.classList.add('dish-up')
-  cake.classList.add('visible')
-  eatenPart.classList.remove('invisible')
-  present.classList.add('invisible')
-  audio.load();
-  audio.play();
-  }
-  eatenPart.onclick=function(){
-    decorate.classList.add('invisible')
-    eatenPart.classList.add('invisible')
-    miniUki.classList.remove('invisible')
-    miniUki.classList.add('uki-falling')
-  }
-  miniUki.onclick=function(){
-    birthdayText.classList.remove('invisible');
-    miniUki.classList.remove('uki-falling');
-    miniUki.classList.add('jump')
-    table.classList.add('invisible');
-    dish.classList.add('invisible');
-    snows.classList.remove('overflow');
-  }
