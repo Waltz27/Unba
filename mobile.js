@@ -22,18 +22,38 @@ onToggle: (self) => gsap.to('.body', {
 });
 const timeline =gsap.timeline( { defaults: {duration: 0.8}})
 timeline    
-.to('.full-background-image',{
-    duration:1.6,
+.to('.left',{
+    opacity:1,
+    x:'200px',
+    ease:"ease.out",
+  })
+  .to('.right',{
+    opacity:1,
+    x:'-200px',
+    ease:"ease.out",
+  })
+  .to('.fall',{
+    opacity:1,
+    duration:1.8,
+    y:'130vh',
+    ease:"ease.out",
+    onComplete: () => document.querySelector('.body').classList.remove('unscrollable'),
+  })
+  .to('.fall',{
+    duration:2,
     opacity:0,
-    ease:'circ.in',
-    onComplete: () => document.querySelector('.body').classList.remove('unscrollable')
-})
+    ease:"ease.out",
+  })
+  .to('.surprise',{
+    opacity:0,
+    ease:"ease.out",
+  })
 .to('.minimize-logo',{
     opacity:1,
     y:'100px',
 })
 .to('.title', {
-    y:'2vh',
+    y:'-30vh',
     opacity:1,
     ease:'ease-in',
 })

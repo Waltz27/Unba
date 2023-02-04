@@ -41,7 +41,7 @@ box-sizing: border-box;
 --color:#7B667F;
 --second-color:#b274a8;
 --text-color:#393833;
---bkg-color: #151515;
+--bkg-color: #16161d;
 --wallpaper-color: #3e5366;
 --primary-color: white;
 --secondary-text: #8898a6;
@@ -73,19 +73,40 @@ background-color: var(--color);
 display: grid;
 place-items: center;
 }
-.full-background-image{
-height: 50vh;
-width: 100vw;
-background-image: url(https://ik.imagekit.io/4bkho8jgt/Happy_birthday1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666838066472);
-background-size: contain;
-background-repeat: no-repeat;
-z-index: 2;
-opacity: 1;
+.opening{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.surprise{
+    width: 30vw;
+    height: 35vw;
+    position: absolute;
+    bottom: 0;
+}
+.left{
+    opacity: 0;
+    left: -200px;
+}
+.right{
+    opacity: 0;
+    right: -200px;
+}
+.falling-uki{
+    display: grid;
+    place-items: center;
+}
+.fall{
+    opacity: 0;
+    width: 50vw;
+    height: 55vw;
+    position: absolute;
+    top:-100vh;
 }
 .minimize-logo{
 width: 15%;
 border-radius: 50%;
-border: 1px solid #151515;
+border: 1px solid var(--bkg-color);
 box-shadow: 0px 8px 70px 10px rgba(159,26,207,0.71);
 -webkit-box-shadow: 0px 8px 70px 10px rgba(159,26,207,0.71);
 -moz-box-shadow: 0px 8px 70px 10px rgba(159,26,207,0.71);
@@ -534,7 +555,7 @@ border-top-left-radius:20px ;
 }
 .yt-title h1{
 position: absolute;
-color: #151515;
+color: var(--bkg-color);
 justify-self: center;
 }
 .yt-logo{
@@ -588,12 +609,12 @@ margin-bottom: 10px;
 height: 50vh;
 margin: auto;
 width: 90vw;
-background-color: #151515;
+background-color: var(--bkg-color);
 place-self: center;
 border-radius: 20px;
 }
 .song-play{
-font-size: 4vw;
+font-size: 8vw;
 color: white;
 cursor: pointer;
 position: relative;
@@ -670,7 +691,7 @@ font-family: 'Titan One', cursive;
 .copyright{
 font-size: 0.5rem!important;
 opacity: 0.85;
-color: #151515;
+color: var(--bkg-color);
 }
 .hidden{
 opacity: 0;

@@ -13,7 +13,7 @@ box-sizing: border-box;
 --color:#7B667F;
 --second-color:#b274a8;
 --text-color:#4E4351;
---bkg-color: #151515;
+--bkg-color: #16161d;
 --wallpaper-color: #3e5366;
 --primary-color: white;
 --secondary-text: #8898a6;
@@ -21,13 +21,14 @@ box-sizing: border-box;
 --pfp-border: 4px;
 --classic-blue: 29, 161, 241;
 --accent-color-rgb: var(--classic-blue);
---accent-color: rgb(var(--accent-color-rgb))
+--accent-color: rgb(var(--accent-color-rgb));
 }
 html{
 scroll-behavior: smooth;
 scroll-snap-type: y mandatory;
 scrollbar-width: none;
 -ms-overflow-style: none;
+scroll-padding-top: 10px;
 }
 ::-webkit-scrollbar {
 width: 1px;
@@ -41,6 +42,35 @@ body{
 background-color: var(--color);
 }
 /*Intro*/
+.opening{
+width: 100vw;
+height: 100vh;
+position: relative;
+}
+.surprise{
+width: 15vw;
+height: 20vw;
+position: absolute;
+bottom: 0;
+}
+.left{
+opacity: 0;
+left: -200px;
+}
+.right{
+opacity: 0;
+right: -200px;
+}
+.falling-uki{
+display: grid;
+place-items: center;
+}
+.fall{
+width: 20vw;
+height: 25vw;
+position: absolute;
+top:-100vh;
+}
 .welcome-image-container{
 position: relative;
 top:100vh;
@@ -52,14 +82,6 @@ width: 200px;
 height: 250px;
 opacity: 0;
 pointer-events: none;
-}
-.headerIntro{
-width: 100%;
-height: auto;
-overflow: hidden;
-z-index: 999;
-border-radius: 0px 0px 185px 120px / 0px 0px 185px 120px;
-position: absolute;
 }
 .Logo{
 display: flex;
@@ -391,7 +413,7 @@ background: white;
 box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
 backdrop-filter: blur(2.8px);
 -webkit-backdrop-filter: blur(2.8px);
-color: #151515;
+color: var(--bkg-color);
 border-radius: 50%;
 display: flex;
 justify-content: center;
@@ -522,7 +544,7 @@ transition: 0.5s ease-in-out;
 .TwitterCard {
 height: 3.6rem;
 width: 3.6rem;
-background-color: #151515;
+background-color: var(--bkg-color);
 border-radius: 50%;
 position: absolute;
 transition: 1s;
@@ -768,7 +790,7 @@ border-top-left-radius:20px ;
 }
 .yt-title h1{
 position: absolute;
-color: #151515;
+color: var(--bkg-color);
 }
 .yt-logo{
 color: red;
@@ -830,7 +852,7 @@ margin-bottom: 10px;
 height: 80vh;
 margin: auto;
 width: 90vw;
-background-color: #151515;
+background-color: var(--bkg-color);
 place-self: center;
 border-radius: 20px;
 }
@@ -915,7 +937,7 @@ font-family: 'Titan One', cursive;
 .copyright{
 font-size: 0.5rem!important;
 opacity: 0.85;
-color: #151515;
+color: var(--bkg-color);
 }
 .hidden{
 opacity: 0;

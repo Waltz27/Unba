@@ -20,10 +20,30 @@ onToggle: (self) => gsap.to('.body', {
 
 const timeline =gsap.timeline( { defaults: {duration: 0.8}})
 timeline    
-  .to('.headerIntro',{
-      duration:2,
-      y:'-100%',
-      onComplete: () => document.querySelector('.body').classList.remove('unscrollable'),
+  .to('.left',{
+    opacity:1,
+    x:'200px',
+    ease:"ease.out",
+  })
+  .to('.right',{
+    opacity:1,
+    x:'-200px',
+    ease:"ease.out",
+  })
+  .to('.fall',{
+    opacity:1,
+    y:'130vh',
+    ease:"ease.out",
+    onComplete: () => document.querySelector('.body').classList.remove('unscrollable'),
+  })
+  .to('.fall',{
+    duration:2,
+    opacity:0,
+    ease:"ease.out",
+  })
+  .to('.surprise',{
+    opacity:0,
+    ease:"ease.out",
   })
   .to('.Logo',{
     opacity:1,
