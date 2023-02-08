@@ -75,7 +75,7 @@ place-items: center;
 }
 .opening{
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     position: relative;
 }
 .surprise{
@@ -540,6 +540,7 @@ margin-top: 10vh;
 height: 100vh;
 width: 100vw;
 display: grid;
+grid-template-rows: auto 1fr ;
 font-family: 'Ubuntu', sans-serif;
 }
 .yt-title{
@@ -570,7 +571,8 @@ background-size: cover;
 width: 30vw;
 height: 16vw;
 border-radius: 10px;
-margin-top: 60px;
+margin-top: 30px;
+margin-bottom: 30px;
 position: relative;
 border: 2.5px solid var(--color);
 opacity: 1;
@@ -595,13 +597,14 @@ background-image: url(https://ik.imagekit.io/4bkho8jgt/yt__1__4AHi_Vvj2.jpg?ik-s
 }
 .yt-background{
 width: 100vw;
-height: 100vh;
+height: 80vh;
 background: rgba(255,255,255,0.65);
 transition: 0.8s ease-out;
 }
 .yt-playlist{
 position: relative;
 display: flex;
+align-items: center;
 justify-content: space-between;
 margin-bottom: 10px;
 }

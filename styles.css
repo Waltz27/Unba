@@ -771,33 +771,12 @@ cursor: pointer;
 .youtube{
 opacity: 0;
 margin-top: 60vh;
-height: 100vh;
+height: 110vh;
 width: 100vw;
 display: grid;
+grid-template-rows: auto 1fr ;
 font-family: 'Ubuntu', sans-serif;
-}
-.yt-title{
-width: 100vw;
-height: 10vh;
-display: grid;
-place-items: center;
-justify-self: center;
-font-size: 30px;
-background-color: white;
-border-top-right-radius:20px ;
-border-top-left-radius:20px ;
-
-}
-.yt-title h1{
-position: absolute;
-color: var(--bkg-color);
-}
-.yt-logo{
-color: red;
-font-size: 60px;
-position: relative;
-left: -160px;
-transition: 2s; 
+background: rgba(255,255,255,0.65);
 }
 .cover-playlist:hover{
 opacity: 0.5;
@@ -839,13 +818,16 @@ background-image: url(https://ik.imagekit.io/4bkho8jgt/yt__1__4AHi_Vvj2.jpg?ik-s
 .yt-background{
 width: 100vw;
 height: 100vh;
-background: rgba(255,255,255,0.65);
 transition: 0.8s ease-out;
 }
 .yt-playlist{
 position: relative;
+height: 20vh;
 display: flex;
+align-items: center;
 justify-content: space-between;
+background: rgba(255,255,255,0.65);
+border-radius: 20px;
 margin-bottom: 10px;
 }
 .original-song{
@@ -855,14 +837,14 @@ width: 90vw;
 background-color: var(--bkg-color);
 place-self: center;
 border-radius: 20px;
+display: grid;
+place-items: center;
 }
 .song-play{
 font-size: 4vw;
 color: white;
 cursor: pointer;
 position: relative;
-top: 45%;
-left: 48%;
 }
 .song-play:hover{
 filter: brightness(0.8);
