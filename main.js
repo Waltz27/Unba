@@ -123,26 +123,37 @@ gsap.to(".TwitterCard", {
     start:"top top",
   }
 })
-gsap.to('.youtube',{
+const Bubble2 =gsap.timeline( { defaults: {duration: 0.8}})
+Bubble2
+.to('.Youtube-container',{
   opacity:1,
-  ease:"ease-in",
-  scrollTrigger:{
-    trigger:".youtube",
-    start:"-20% top",
-  }
+}) 
+.to('.bubbleContainer',{
+    duration:4,
+    opacity:1,
+    scale:1,
+    y:'-150vh',
+    ease:"ease.out",
+    onComplete: () => document.querySelector('.yt-bubble').classList.add('pop'),
 })
-gsap.to(".playlist",2.5,{
-  opacity:1,
-  stagger:{
-    each: 0.8,
-    from:"start",
-    ease:"ease-out",
-  },
-  scrollTrigger:{
-    trigger:".youtube",
-    start:"top top",
-  }
-})
+.to('.youtube',{
+    opacity:1,
+    ease:"ease-in",
+  })
+.to(".playlist",2.5,{
+    opacity:1,
+    stagger:{
+      each: 0.8,
+      from:"start",
+      ease:"ease-out",
+    },
+  })
+const scroll1=ScrollTrigger.create({
+  trigger:".Youtube-container",
+  start:"top top",
+  animation:Bubble2
+});
+
 const observer = new IntersectionObserver((entries)=>{
   entries.forEach((entry)=>{
       if(entry.isIntersecting){
