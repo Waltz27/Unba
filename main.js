@@ -206,6 +206,7 @@ const v10=document.querySelector('.horizontal-ten');
 const v11=document.querySelector('.horizontal-eleventh');
 const v12=document.querySelector('.horizontal-twelfth');
 const v13=document.querySelector('.horizontal-thirteen');
+const v14=document.querySelector('.horizontal-fourthteen')
 const audio=document.getElementById('Happy-birthday');
 const preview1=document.getElementById('song-1');
 const preview2=document.getElementById('song-2');
@@ -220,6 +221,7 @@ const preview10=document.getElementById('song-10');
 const preview11=document.getElementById('song-11');
 const preview12=document.getElementById('song-12');
 const preview13=document.getElementById('song-13');
+const preview14=document.getElementById('song-14');
 v1.onmouseenter = function(){
   preview1.play();
 };
