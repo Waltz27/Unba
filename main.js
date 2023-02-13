@@ -125,11 +125,11 @@ gsap.to(".TwitterCard", {
 })
 const Bubble2 =gsap.timeline( { defaults: {duration: 0.8}})
 Bubble2
-.to('.Youtube-container',{
+.to('.Youtube-Container',{
   opacity:1,
 }) 
 .to('.bubbleContainer',{
-    duration:4,
+    duration:2,
     opacity:1,
     scale:1,
     y:'-150vh',
@@ -140,7 +140,8 @@ Bubble2
     opacity:1,
     ease:"ease-in",
   })
-.to(".playlist",2.5,{
+.to(".playlist",{
+    duration:1.2,
     opacity:1,
     stagger:{
       each: 0.8,
@@ -149,8 +150,8 @@ Bubble2
     },
   })
 const scroll1=ScrollTrigger.create({
-  trigger:".Youtube-container",
-  start:"top top",
+  trigger:".Youtube-Container",
+  start:"-20% top",
   animation:Bubble2
 });
 
