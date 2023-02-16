@@ -30,14 +30,14 @@ timeline
     x:'-200px',
     ease:"ease.out",
   })
-  .to('.fall',{
+  .to('.rise',{
     opacity:1,
-    y:'130vh',
+    y:'-100vh',
     ease:"ease.out",
     onComplete: () => document.querySelector('.body').classList.remove('unscrollable'),
   })
-  .to('.fall',{
-    duration:2,
+  .to('.rise',{
+    duration:1.5,
     opacity:0,
     ease:"ease.out",
   })

@@ -22,13 +22,17 @@ onToggle: (self) => gsap.to('.body', {
 });
 const timeline =gsap.timeline( { defaults: {duration: 0.8}})
 timeline    
-  .to('.fall',{
+.to('.rise',{
     opacity:1,
-    duration:1.8,
-    y:'160vh',
+    y:'-100vh',
+    ease:"ease.out",
+})
+.to('.rise',{
+    duration:1.5,
+    opacity:0,
     ease:"ease.out",
     onComplete: () => document.querySelector('.body').classList.remove('unscrollable'),
-  })
+})
 .to('.minimize-logo',{
     opacity:1,
     y:'100px',

@@ -61,15 +61,15 @@ left: -200px;
 opacity: 0;
 right: -200px;
 }
-.falling-uki{
+.rising-uki{
 display: grid;
 place-items: center;
 }
-.fall{
-width: 20vw;
-height: 25vw;
+.rise{
 position: absolute;
-top:-100vh;
+bottom:-100vh;
+opacity: 0;
+max-width: 40vw;
 }
 .welcome-image-container{
 position: relative;

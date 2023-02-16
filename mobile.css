@@ -92,17 +92,16 @@ place-items: center;
     opacity: 0;
     right: -200px;
 }
-.falling-uki{
+.rising-uki{
     display: grid;
     place-items: center;
 }
-.fall{
-    opacity: 0;
-    width: 50vw;
-    height: 55vw;
+.rise{
     position: absolute;
-    top:-100vh;
-}
+    bottom:-100vh;
+    opacity: 0;
+    max-width: 100vw;
+    }
 .minimize-logo{
 width: 15%;
 border-radius: 50%;
