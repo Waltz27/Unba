@@ -316,9 +316,6 @@ background-image: url(https://ik.imagekit.io/4bkho8jgt/13_fj-Q1true.jpg?ik-sdk-v
 .horizontal-fourthteen{
     background-image: url(https://ik.imagekit.io/4bkho8jgt/4ijN-_UAwa8-HD_yqWJAhM4C.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676301754798);
     }
-.horizontal-fifthteen{
-    background-image: url(https://ik.imagekit.io/4bkho8jgt/Happy_birthday1.jpg?updatedAt=1666838066472);
-}
 .one{
 transform: translateX(-6rem);
 }
@@ -336,10 +333,6 @@ transform: translateX(-18rem)
 }
 .six{
 transform: translateX(9rem)
-}
-.img-wrapper.special{
-    border-radius: 50%;
-    box-shadow: 0 0 200px 100px var(--second-color);
 }
 /*Bubbles*/
 div[class^=bubble-] {
@@ -905,7 +898,6 @@ place-self: center;
 border-radius: 20px;
 display: grid;
 place-items: center;
-position: relative;
 }
 .song-play{
 font-size: 4vw;
