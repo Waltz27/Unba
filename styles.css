@@ -252,7 +252,7 @@ background: #efecdb;
 border-radius: 50%;
 transition: 0.5s ease-in-out;
 }
-.horizontal-image {
+.expand-image {
 width: 150px;
 height: 150px;
 border-radius: 50%;
@@ -265,56 +265,56 @@ transition: 0.5s ease-in-out;
 border-radius: 20px;
 transition: 0.5s ease;
 }
-.image-link:hover .horizontal-image{ 
+.image-link:hover .expand-image{ 
 width: 30vw;
 height: 16vw;
 border-radius: 20px;
 filter: blur(0px);
 transition: 0.5s ease;
 }
-.horizontal-one{
+.expandBubble-one{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/1_SIlegfOBe.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837903035);
 }
-.horizontal-two{
+.expandBubble-two{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/2_HGolETi29.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902443);
 }
-.horizontal-three{
+.expandBubble-three{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/3_QgISd1V2j.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902325);
 }
-.horizontal-four{
+.expandBubble-four{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/4_yGO-LYlt17.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902520);
 }
-.horizontal-five{
+.expandBubble-five{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/5_ivF2l0TVV4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902584);
 }
-.horizontal-six{
+.expandBubble-six{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/6_Y0h5tY2wZ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902668);
 }
-.horizontal-seven{
+.expandBubble-seven{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/7_I_qCCq5Ikv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902658);
 }
-.horizontal-eight{
+.expandBubble-eight{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/8_LxuVl59sLH.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902299);
 }
-.horizontal-nine{
+.expandBubble-nine{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/9_Lw0Vy1Wu9.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902270);
 }
-.horizontal-ten{
+.expandBubble-ten{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/10_N0wT8lHKSx.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837902353);
 }
-.horizontal-eleventh{
+.expandBubble-eleventh{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/11_YFktlqRE6.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837905849);
 }
-.horizontal-twelfth{
+.expandBubble-twelfth{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/12_MFZfdBLtw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837905294);
 }
-.horizontal-thirteen{
+.expandBubble-thirteen{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/13_fj-Q1true.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1666837905717);
 }
-.horizontal-fourthteen{
+.expandBubble-fourthteen{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/4ijN-_UAwa8-HD_yqWJAhM4C.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676301754798);
 }
-.horizontal-fifthteen{
+.expandBubble-fifthteen{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/Happy_birthday1.jpg?updatedAt=1666838066472);
 }
 .one{
