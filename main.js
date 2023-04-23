@@ -20,17 +20,15 @@ onToggle: (self) => gsap.to('.body', {
 
 const timeline =gsap.timeline( { defaults: {duration: 0.8}})
 timeline    
-  .to('.left',1.2,{
+  .to('.left',{
     opacity:1,
     x:'200px',
-    y:"-20px",
-    ease:Elastic.easeOut.config(0.6,0.4),
+    ease:"ease.out",
   })
-  .to('.right',1.2,{
+  .to('.right',{
     opacity:1,
     x:'-200px',
-    y:"-20px",
-    ease:Elastic.easeOut.config(0.6,0.4),
+    ease:"ease.out",
   })
   .to('.rise',{
     opacity:1,
@@ -194,18 +192,132 @@ item.addEventListener('click',activeLink)
 Draggable.create('#drag',{
   bounds:'.body',
 });
-const imageContainers = document.querySelectorAll('.img-wrapper');
-
-imageContainers.forEach(container => {
-  const audio = container.querySelector('audio');
-  const image = container.querySelector('.expand-image');
-  
-  container.addEventListener('mouseover', () => {
-    audio.currentTime = 0; 
-    audio.play();
-  });
-  
-  container.addEventListener('mouseout', () => {
-    audio.pause();
-  });
-});
+//ほんとにすみませんん！！！ＷＷ//
+//もっといい方法を見つけるために努力します。//
+const v1=document.querySelector('.horizontal-one');
+const v2=document.querySelector('.horizontal-two');
+const v3=document.querySelector('.horizontal-three');
+const v4=document.querySelector('.horizontal-four');
+const v5=document.querySelector('.horizontal-five');
+const v6=document.querySelector('.horizontal-six');
+const v7=document.querySelector('.horizontal-seven');
+const v8=document.querySelector('.horizontal-eight');
+const v9=document.querySelector('.horizontal-nine');
+const v10=document.querySelector('.horizontal-ten');
+const v11=document.querySelector('.horizontal-eleventh');
+const v12=document.querySelector('.horizontal-twelfth');
+const v13=document.querySelector('.horizontal-thirteen');
+const v14=document.querySelector('.horizontal-fourthteen')
+const audio=document.getElementById('Happy-birthday');
+const preview1=document.getElementById('song-1');
+const preview2=document.getElementById('song-2');
+const preview3=document.getElementById('song-3');
+const preview4=document.getElementById('song-4');
+const preview5=document.getElementById('song-5');
+const preview6=document.getElementById('song-6');
+const preview7=document.getElementById('song-7');
+const preview8=document.getElementById('song-8');
+const preview9=document.getElementById('song-9');
+const preview10=document.getElementById('song-10');
+const preview11=document.getElementById('song-11');
+const preview12=document.getElementById('song-12');
+const preview13=document.getElementById('song-13');
+const preview14=document.getElementById('song-14');
+v1.onmouseenter = function(){
+  preview1.play();
+};
+v1.onmouseleave = function(){
+  preview1.pause();
+  preview1.currentTime = 0;
+};
+v2.onmouseenter = function(){
+  preview2.play();
+};
+v2.onmouseleave = function(){
+  preview2.pause();
+  preview2.currentTime = 0;
+};
+v3.onmouseenter = function(){
+  preview3.play();
+};
+v3.onmouseleave = function(){
+  preview3.pause();
+  preview3.currentTime = 0;
+};
+v4.onmouseenter = function(){
+  preview4.play();
+};
+v4.onmouseleave = function(){
+  preview4.pause();
+  preview4.currentTime = 0;
+};
+v5.onmouseenter = function(){
+  preview5.play();
+};
+v5.onmouseleave = function(){
+  preview5.pause();
+  preview5.currentTime = 0;
+};
+v6.onmouseenter = function(){
+  preview6.play();
+};
+v6.onmouseleave = function(){
+  preview6.pause();
+  preview6.currentTime = 0;
+};
+v7.onmouseenter = function(){
+  preview7.play();
+};
+v7.onmouseleave = function(){
+  preview7.pause();
+  preview7.currentTime = 0;
+};
+v8.onmouseenter = function(){
+  preview8.play();
+};
+v8.onmouseleave = function(){
+  preview8.pause();
+  preview8.currentTime = 0;
+};
+v9.onmouseenter = function(){
+  preview9.play();
+};
+v9.onmouseleave = function(){
+  preview9.pause();
+  preview9.currentTime = 0;
+};
+v10.onmouseenter = function(){
+  preview10.play();
+};
+v10.onmouseleave = function(){
+  preview10.pause();
+  preview10.currentTime = 0;
+};
+v11.onmouseenter = function(){
+  preview11.play();
+};
+v11.onmouseleave = function(){
+  preview11.pause();
+  preview11.currentTime = 0;
+};
+v12.onmouseenter = function(){
+  preview12.play();
+};
+v12.onmouseleave = function(){
+  preview12.pause();
+  preview12.currentTime = 0;
+};
+v13.onmouseenter = function(){
+  preview13.play();
+};
+v13.onmouseleave = function(){
+  preview13.pause();
+  preview13.currentTime = 0;
+};
+v14.onmouseenter = function(){
+  preview14.play();
+};
+v14.onmouseleave = function(){
+  preview14.pause();
+  preview14.currentTime = 0;
+};
