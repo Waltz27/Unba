@@ -830,3 +830,17 @@ overflow: hidden;
 .overflow{
 overflow: hidden;
 }
+.end{
+    width: 100vw;
+    height: 10vh;
+    font-family: 'Titan One', cursive;
+    display: grid;
+    place-items: center;
+    position: relative;
+    bottom: -10vh;
+}
+.copyright{
+    font-size: 0.8em;
+    opacity: 0.85;
+    color: var(--bkg-color);
+}
