@@ -184,6 +184,9 @@ infoTimeline
     opacity:1,
     y:"-5vh",
 })
+.to(".profile-card-link",{
+  opacity:1,
+})
 const scroll2=ScrollTrigger.create({
     trigger:".info-container",
     start:"top top",
