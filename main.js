@@ -172,6 +172,12 @@ infoTimeline
     opacity:0,
     })
 .to(".soap-background",{
+  scale:0,
+  duration:1.2,
+  ease:"ease-in"
+})
+.to(".soap-background",{
+    scale:1,
     width:"80vw",
     height:"200vh",
     y:"40vh",
