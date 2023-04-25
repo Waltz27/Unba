@@ -172,12 +172,6 @@ infoTimeline
     opacity:0,
     })
 .to(".soap-background",{
-  scale:0,
-  duration:1.2,
-  ease:"ease-in"
-})
-.to(".soap-background",{
-    scale:1,
     width:"80vw",
     height:"200vh",
     y:"40vh",
@@ -253,7 +247,7 @@ imageContainers.forEach(container => {
   });
 });
 
-var videoId = 'qgjlMTTUkhk';
+var videoId = 'p8A9Gq7HwIQ';
 
   // Replace the API key below with your own API key.
   var apiKey = 'AIzaSyBi042xGHiRTrCZuq7VntuYkxqbdug8Cuw';
