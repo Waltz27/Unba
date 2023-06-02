@@ -69,3 +69,12 @@ entries.forEach((entry)=>{
 });
 const hiddenElement =document.querySelectorAll('.hidden');
 hiddenElement.forEach((el)=> observer.observe(el));
+
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', 
+    });
+  }
+  
+  window.onload = scrollToTop;

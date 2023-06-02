@@ -54,18 +54,16 @@ timeline
   .to('.welcome-image',1.5,{
     y:'-20vh',
     opacity:1,
-    ease:'ease-in'
+    ease:'ease-in',
   })
   .to('.title',1.5, {
-      y:'40vh',
+      y:'25vh',
       opacity:1,
       ease:'ease-in',
   })
   .to('.menu-position',0.7,{
     opacity:1,
-    y:'80px',
-    x:"80px",
-    ease:"ease-in",
+    ease:"ease-out",
   })
   .to('.gallery',{
       y:'-10vh',
@@ -81,6 +79,15 @@ timeline
       opacity:1,
       ease:"ease-in"
   })
+gsap.to('.menu',2,{
+  x:"-42vw",
+  y:"-40vh",
+  ease:"ease-in",
+  scrollTrigger:{
+      trigger:".welcome-image",
+      start:"top top",
+  }
+})
 gsap.to('.section-name',2.5,{
   opacity:1,
   scale:'1.2',
@@ -239,3 +246,12 @@ var videoId = 'p8A9Gq7HwIQ';
     document.getElementById('player').innerHTML = embedCode;
   };
   xhr.send();
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' 
+  });
+}
+
+window.onload = scrollToTop;
