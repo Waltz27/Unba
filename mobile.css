@@ -49,7 +49,8 @@ box-sizing: border-box;
 --pfp-border: 4px;
 --classic-blue: 29, 161, 241;
 --accent-color-rgb: var(--classic-blue);
---accent-color: rgb(var(--accent-color-rgb))
+--accent-color: rgb(var(--accent-color-rgb));
+--main-font-family:'tetsubin-gothic', sans-serif;
 }
 html{
 scroll-behavior: smooth;
@@ -114,7 +115,7 @@ font-size:10vw;
 letter-spacing: 5px;
 color: var(--text-color);
 overflow: hidden;
-font-family: 'Titan One', cursive;
+font-family:var(--main-font-family);
 position: relative;
 opacity: 0;
 }
@@ -149,7 +150,7 @@ top:-6vh;
 opacity: 0;
 font-size: 2em;
 color: var(--text-color);
-font-family: 'Titan One', cursive;
+font-family:var(--main-font-family);
 }
 .img-container{
 height: 500vh;

@@ -52,7 +52,6 @@ timeline
     scrollTrigger:{
         trigger:".gallery",
         start:"-5% top",
-        markers:true,
     }
 })
 .to('.section-name',{
