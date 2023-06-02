@@ -22,6 +22,7 @@ box-sizing: border-box;
 --classic-blue: 29, 161, 241;
 --accent-color-rgb: var(--classic-blue);
 --accent-color: rgb(var(--accent-color-rgb));
+--main-font-family:'tetsubin-gothic', sans-serif;
 }
 html{
 scroll-behavior: smooth;
@@ -42,6 +43,10 @@ body{
 background-color: var(--color);
 }
 /*Intro*/
+.intro{
+    width: 100vw;
+    height: 100vh;
+}
 .opening{
 width: 100vw;
 height: 100vh;
@@ -73,119 +78,29 @@ bottom:-100vh;
 opacity: 0;
 max-width: 40vw;
 }
-.welcome-image-container{
-position: relative;
-top:100vh;
-display: grid;
-place-items: center;
+.welcome-intro{
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+}
+.welcoming-text{
+    display: grid;
+    place-items: center;
 }
 .welcome-image{
-width: 200px;
-height: 250px;
+position: relative;
+top:0;
+width: 19%;
 opacity: 0;
 pointer-events: none;
 }
-.Logo{
-display: flex;
-justify-content: center;
-align-items: center;
-opacity: 0;
-}
-.card{
-position: relative;
-width: 100px;
-height: 100px;
-background: rgba(255,255,255,0.65);
--webkit-box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
--moz-box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-border-radius: 50%;
-transition: 0.5s;
-animation: float 6s infinite;
-}
-.card:hover{
-width: 300px;
-height:450px;
-border-radius: 20px;
--webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
--moz-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
-}
-.logo-img{
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-width: 100px;
-height: 100px;
-border-radius: 50%;
-background-color: white;
-background-image: url(https://ik.imagekit.io/4bkho8jgt/icon_popw-O2de.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669684716760);
-background-size: cover;
-transition: 0.5s;
-}
-.card:hover .logo-img{
-width: 150px;
-height: 150px;
-}
-.card .info{
-position: absolute;
-width:100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: flex-end;
-font-family: 'Titan One', cursive;
-}
-.card .info .about{
-padding: 40px;
-text-align: center;
-width: 100%;
-opacity: 0;
-}
-.card .info .about h2{
-font-size: 1.25em;
-font-weight: 600;
-color: var(--text-color);
-line-height: 1.2em;
-}
-.card .info .about h2 span{
-font-size: 0.75em;
-font-weight: 500;
-opacity: 0.5;
-}
-.card .info .about .data{
-display: flex;
-justify-content: space-between;
-margin: 20px 0;
-}
-.card .info .about .data h1{
-font-size: 1.25em;
-font-weight: 600;
-color: var(--text-color);
-line-height: 1.2em;
-}
-.card .info .about .data h3{
-font-size: 1em;
-color: var(--text-color);
-line-height: 1.2em;
-font-weight: 600;
-}
-.card .info .about .data h3 span{
-font-size: 0.85em;
-font-weight: 400;
-opacity: 0.5;
-}
-.card:hover .info .about{
-opacity: 1;
-transition: 3s;
-}
 .title {
-text-align: center;
-font-size:6vw;
+font-size:8em;
 letter-spacing: 5px;
+margin: 2vh;
 color: var(--text-color);
 overflow: hidden;
-font-family: 'Titan One', cursive;
+font-family:var(--main-font-family);
 opacity: 0;
 }
 .scroll-down-position{
@@ -214,18 +129,17 @@ animation: scrollDown 2s ease infinite;
 /*Gallery*/
 .gallery{
 position: relative;
+top: 0;
 display: grid;
 place-items: center;
 opacity: 0;
 transition: 0.8s ease-in-out;
 }
 .gallery h1{
-position: relative;
-top:-6vh;
 opacity: 0;
-font-size: 2em;
+font-size: 4em;
 color: var(--text-color);
-font-family: 'Titan One', cursive;
+font-family: var(--main-font-family);
 }
 .img-container{
 height: 500vh;
@@ -765,7 +679,7 @@ transform: translateX(-30px) translateY(-64px)rotate(270deg);
     left: 0%;
     border-radius: 50%;
     border: var(--pfp-border) solid var(--bkg-color);
-    background-image: url("https://ik.imagekit.io/4bkho8jgt/icon_8DwqkXqds.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667555877177");
+    background-image: url("https://ik.imagekit.io/4bkho8jgt/icon_popw-O2de.jpg?updatedAt=1669684716760");
     background-size: cover;
     }
     .twitter-pfp-two{
@@ -997,6 +911,7 @@ transform: translateX(-30px) translateY(-64px)rotate(270deg);
     width: auto;
     height: 100vh;
     font-size: 100%;
+    font-family: var(--main-font-family);
 }
 .info-icon{
     width: auto;
@@ -1040,7 +955,6 @@ transform: translateX(-30px) translateY(-64px)rotate(270deg);
     flex: 1 1 50%;
     padding: 0 20px;
     color: var(--color);
-    font-family: 'tetsubin-gothic', sans-serif;
     font-weight: bolder;
 }
 .info-introduction{

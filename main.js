@@ -51,20 +51,13 @@ timeline
     opacity:1,
     y:'40'    
   })
-  .to('.welcome-image',2,{
-    y:'-100vh',
-    scale:'2',
-    opacity:1,
-    ease:'circ-in',
-  })
   .to('.welcome-image',1.5,{
-    y:'-87vh',
-    scale:'1.5',
+    y:'-20vh',
     opacity:1,
     ease:'ease-in'
   })
-  .to('.title', {
-      y:'2vh',
+  .to('.title',1.5, {
+      y:'40vh',
       opacity:1,
       ease:'ease-in',
   })
@@ -75,6 +68,7 @@ timeline
     ease:"ease-in",
   })
   .to('.gallery',{
+      y:'-10vh',
       opacity:1,
       ease:'circ.in',
       scrollTrigger:{
@@ -87,31 +81,12 @@ timeline
       opacity:1,
       ease:"ease-in"
   })
-gsap.to('.section-name',4,{
-  opacity:1,
-  ease:"ease-in",
-  scrollTrigger:{
-      trigger:".gallery",
-      start:"top top",
-  }
-})
 gsap.to('.section-name',2.5,{
   opacity:1,
   scale:'1.2',
-  y:"800%",
   ease:"ease-in",
   scrollTrigger:{
-      trigger:".gallery",
-      start:"top top",
-  }
-})
-gsap.to('.text',2.5,{
-  opacity:1,
-  scale:'0.9',
-  ease:"ease-in",
-  y:"900%",
-  scrollTrigger:{
-      trigger:".gallery",
+      trigger:".scroll-down",
       start:"top top",
   }
 })

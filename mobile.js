@@ -35,53 +35,30 @@ timeline
 })
 .to('.minimize-logo',{
     opacity:1,
-    y:'100px',
+    y:'20vh',
 })
 .to('.title', {
     y:'-50vh',
     opacity:1,
     ease:'ease-in',
 })
+.to('.scroll-down',0.7,{
+    opacity:1,
+    y:'-20vh',
+    ease:"ease-in"
+})
 .to('.gallery',{
     opacity:1,
     scrollTrigger:{
-        trigger:".scroll-down",
-        start:"top top",
+        trigger:".gallery",
+        start:"-5% top",
+        markers:true,
     }
 })
-.to('.scroll-down',0.7,{
+.to('.section-name',{
     opacity:1,
-    ease:"ease-in"
+    ease:"ease-in",
 })
-gsap.to('.section-name',4,{
-opacity:1,
-ease:"ease-in",
-scrollTrigger:{
-    trigger:".gallery",
-    start:"top top",
-}
-})
-gsap.to('.section-name',2.5,{
-opacity:1,
-scale:'1.2',
-y:"50vh",
-ease:"ease-in",
-scrollTrigger:{
-    trigger:".gallery",
-    start:"top top",
-}
-})
-gsap.to('.text',2.5,{
-opacity:1,
-scale:'0.9',
-ease:"ease-in",
-y:"80vh",
-scrollTrigger:{
-    trigger:".gallery",
-    start:"top top",
-}
-})
-
 const observer = new IntersectionObserver((entries)=>{
 entries.forEach((entry)=>{
     if(entry.isIntersecting){

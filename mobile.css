@@ -74,9 +74,8 @@ display: grid;
 place-items: center;
 }
 .opening{
-width: 100vw;
+width: 100dvw;
 height: 100dvh;
-position: relative;
 }
 .surprise{
 width: 30vw;
@@ -103,36 +102,20 @@ opacity: 0;
 max-width: 100vw;
 }
 .minimize-logo{
-width: 15%;
-border-radius: 50%;
-border: 1px solid var(--bkg-color);
-box-shadow: 0px 8px 70px 10px rgba(159,26,207,0.71);
--webkit-box-shadow: 0px 8px 70px 10px rgba(159,26,207,0.71);
--moz-box-shadow: 0px 8px 70px 10px rgba(159,26,207,0.71);
-background-image: url(https://ik.imagekit.io/4bkho8jgt/icon_popw-O2de.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669684716760);
-background-size: cover;
-background-repeat: no-repeat;
 position: absolute;
-pointer-events: none;
-left: 50%;
-transform: translateX(-50%);
-top:-40px;
+top:0;
+width: 80%;
 opacity: 0;
-}
-.minimize-logo::after{
-content: "";
-padding-bottom: 100%;
-display: block;
+pointer-events: none;
 }
 .title {
 text-align: center;
-font-size:6vw;
+font-size:10vw;
 letter-spacing: 5px;
 color: var(--text-color);
 overflow: hidden;
 font-family: 'Titan One', cursive;
 position: relative;
-bottom: 12rem;
 opacity: 0;
 }
 .scroll-down{
@@ -160,7 +143,7 @@ place-items: center;
 opacity: 0;
 transition: 0.8s ease-in-out;
 }
-.gallery h1{
+.section-name{
 position: relative;
 top:-6vh;
 opacity: 0;
@@ -298,64 +281,6 @@ box-shadow: 0 10px 50px #84f7d0;
 .img-wrapper.special{
 box-shadow: 0 0 200px 100px var(--primary-color);
 }
-/*Bubbles*/
-div[class^=bubble-] {
-height: 1px;
-width: 1px;
-position: absolute;
-background-color: rgba(0, 141, 210, 0.3);
-border-radius: 50%;
-transform: translateX(-100%);
-}
-div[class^=bubble-]:after {
-content: "";
-position: absolute;
-height: 85%;
-width: 85%;
-border-top: 3px solid rgba(255, 255, 255, 0.82);
-border-bottom: 1.5px solid rgba(255, 255, 255, 0.63);
-border-radius: 50%;
-left: 50%;
-top: 50%;
-transform: translate3d(-50%, -50%, 0) rotateZ(-45deg);
-}
-.bubble-1 {
-bottom: -50%;
-left: 12%;
--webkit-animation: bubble-movement 6.5s ease-in -0.25s;
-animation: bubble-movement 6.5s ease-in -0.25s;
-}
-.bubble-2 {
-bottom: -50%;
-left: 52%;
--webkit-animation: bubble-movement 6.5s ease-in -1.6s;
-animation: bubble-movement 6.5s ease-in -1.6s;
-}
-.bubble-3 {
-bottom: -50%;
-left: 78%;
--webkit-animation: bubble-movement 6.5s ease-in -2.6s;
-animation: bubble-movement 6.5s ease-in -2.6s;
-}
-.bubble-4 {
-bottom: -50%;
-left: 15%;
--webkit-animation: bubble-movement 6.5s ease-in -2.28s;
-animation: bubble-movement 6.5s ease-in -2.28s;
-}
-.bubble-5 {
-bottom: -50%;
-left: 19%;
--webkit-animation: bubble-movement 6.5s ease-in -1.54s;
-animation: bubble-movement 6.5s ease-in -1.54s;
-}
-.bubble-6 {
-bottom: -50%;
-left: 33%;
--webkit-animation: bubble-movement 6.5s ease-in -0.96s;
-animation: bubble-movement 6.5s ease-in -0.96s;
-}
-
 /*Twitter*/
 .twitter{
 margin-top: 30vh;
@@ -526,7 +451,7 @@ bottom: 0%;
 left: 0%;
 border-radius: 50%;
 border: 2px solid var(--bkg-color);
-background-image: url("https://ik.imagekit.io/4bkho8jgt/icon_8DwqkXqds.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667555877177");
+background-image: url("https://ik.imagekit.io/4bkho8jgt/icon_popw-O2de.jpg?updatedAt=1669684716760");
 background-size: cover;
 cursor: pointer;
 }
