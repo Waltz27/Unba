@@ -65,6 +65,9 @@ timeline
     opacity:1,
     ease:"ease-out",
   })
+  .to(".menu",{
+    position:"fixed",
+  })
   .to('.gallery',{
       y:'-10vh',
       opacity:1,
@@ -79,16 +82,6 @@ timeline
       opacity:1,
       ease:"ease-in"
   })
-gsap.to('.menu',2,{
-  x:"-42vw",
-  y:"-40vh",
-  position:"fixed",
-  ease:"ease-in",
-  scrollTrigger:{
-      trigger:".welcome-image",
-      start:"top top",
-  }
-})
 gsap.to('.section-name',2.5,{
   opacity:1,
   scale:'1.2',
@@ -107,6 +100,19 @@ gsap.to(".TwitterCard", {
     start:"top top",
   }
 })
+const movingMenu=gsap.timeline()
+movingMenu
+.to('.menu',2,{
+  x:"-42vw",
+  y:"-40vh",
+  ease:"ease-in",
+})
+const moveMenu=ScrollTrigger.create({
+  trigger:".menu",
+  start:"-100% top",
+  markers:true,
+  animation:movingMenu
+});
 const Bubble2 =gsap.timeline( { defaults: {duration: 0.8}})
 Bubble2
 .to('.Youtube-Container',{
