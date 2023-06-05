@@ -82,6 +82,7 @@ timeline
 gsap.to('.menu',2,{
   x:"-42vw",
   y:"-40vh",
+  position:"fixed",
   ease:"ease-in",
   scrollTrigger:{
       trigger:".welcome-image",
