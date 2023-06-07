@@ -110,7 +110,6 @@ movingMenu
 const moveMenu=ScrollTrigger.create({
   trigger:".menu",
   start:"-100% top",
-  markers:true,
   animation:movingMenu
 });
 const Bubble2 =gsap.timeline( { defaults: {duration: 0.8}})
