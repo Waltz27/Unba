@@ -61,12 +61,10 @@ timeline
       opacity:1,
       ease:'ease-in',
   })
-  .to('.menu-position',0.7,{
+  .to('.menu-position',0.4,{
     opacity:1,
-    ease:"ease-out",
-  })
-  .to(".menu",{
     position:"fixed",
+    ease:"ease-out",
   })
   .to('.gallery',{
       y:'-10vh',
@@ -213,12 +211,12 @@ function activeLink(){
     item.classList.remove('active'));
     this.classList.add('active')
 }
+Draggable.create('#drag',{
+  bounds:'.bound',
+});
 list.forEach((item)=>
 item.addEventListener('click',activeLink)
 )
-Draggable.create('#drag',{
-  bounds:'.body',
-});
 const imageContainers = document.querySelectorAll('.img-wrapper');
 
 imageContainers.forEach(container => {
