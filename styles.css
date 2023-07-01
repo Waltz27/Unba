@@ -402,6 +402,7 @@ width: 100px;
 height: 100px;
 display: flex;
 z-index: 2;
+text-indent: -9999px;
 justify-content: center;
 align-items: center;
 }
@@ -427,6 +428,7 @@ filter: opacity(0.1);
 }
 .menu .toggle:hover{
 filter: opacity(1);
+text-indent: -9999px;
 }
 .menu .toggle.active{
 transform: rotate(315deg);
@@ -480,16 +482,19 @@ transition: 0.5s;
 .indicator::before{
 content: "";
 position: absolute;
-top:-83px;
-left:6px;
+top:30px;
+left:120px;
 width: 55px;
 height: 55px;
 border-radius: 50%;
-transition: 0.5s;
+transition: 0.3s ease-out;
 opacity: 0;
 }
 .menu.active .indicator::before{
 opacity:1;
+position: absolute;
+top:-83px;
+left:6px;
 background-color: #29fd53;
 -webkit-box-shadow: 0 0 0 6px var(--color);
 -moz-box-shadow: 0 0 0 6px var(--color);
