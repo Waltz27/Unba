@@ -153,7 +153,6 @@ display: grid;
 place-items: center;
 margin-top: 20rem;
 opacity: 1;
-z-index: 1;
 }
 .img-wrapper{
 max-width: 55vw;
@@ -161,6 +160,7 @@ max-height: 50vh;
 position: flex;
 bottom: 100vh;
 border-radius: 50px;
+z-index: 999;
 opacity: 0; 
 }
 .img-wrapper .image-link {
@@ -390,18 +390,18 @@ animation: bubble-movement 6.5s ease-in -0.96s;
 opacity: 0;
 position: absolute;
 width: 100vw;
-height: 100vh;
+height: 0.01pt;
 display: grid;
+z-index: 1;
 place-items: center;
-z-index: 2;
-top: 2vh;
+top: 50vh;
 }
 .menu{
 position: relative;
 width: 100px;
 height: 100px;
 display: flex;
-z-index: 2;
+
 text-indent: -9999px;
 justify-content: center;
 align-items: center;
