@@ -279,6 +279,11 @@ box-shadow: 0 10px 50px #341946;
 -moz-box-shadow: 0 10px 50px #84f7d0;
 box-shadow: 0 10px 50px #84f7d0;
 }
+.bb15{
+-webkit-box-shadow: 0 10px 50px #883049;
+-moz-box-shadow: 0 10px 50px #883049;
+box-shadow: 0 10px 50px #883049;
+}
 .img-wrapper.special{
 box-shadow: 0 0 200px 100px var(--primary-color);
 }
