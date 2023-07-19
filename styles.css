@@ -236,6 +236,9 @@ background-image: url(https://ik.imagekit.io/4bkho8jgt/4ijN-_UAwa8-HD_yqWJAhM4C.
 .expandBubble-fifthteen{
 background-image: url(https://ik.imagekit.io/4bkho8jgt/Happy_birthday1.jpg?updatedAt=1666838066472);
 }
+.expandBubble-sixteen{
+    background-image: url(https://ik.imagekit.io/4bkho8jgt/maxresdefault_OIPWozQin.jpg?updatedAt=1689780940221);
+    }
 .one{
 transform: translateX(-6rem);
 }
@@ -323,6 +326,11 @@ box-shadow: 0 10px 50px #341946;
 -webkit-box-shadow: 0 10px 50px #84f7d0;
 -moz-box-shadow: 0 10px 50px #84f7d0;
 box-shadow: 0 10px 50px #84f7d0;
+}
+.bb15{
+-webkit-box-shadow: 0 10px 50px #883049;
+-moz-box-shadow: 0 10px 50px #883049;
+box-shadow: 0 10px 50px #883049;
 }
 .img-wrapper.special{
 border-radius: 50%;
