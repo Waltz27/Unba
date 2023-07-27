@@ -142,7 +142,35 @@ const scroll1=ScrollTrigger.create({
   animation:Bubble2
 });
 
-
+const infoTimeline=gsap.timeline ();
+infoTimeline
+.to(".info-icon",{
+    opacity:1,
+    ease:"ease-out",
+    duration:2.2,
+})
+.to(".info-icon",{
+    ease:"ease-in",
+    duration:2,
+    })
+.to(".soap-icon",{
+    opacity:0,
+    })
+.to(".soap-background",{
+    scale:0,
+    opacity:0,
+    duration:0.6,
+    ease:"ease-out",
+})
+.to(".text-container",{
+  opacity:1,
+  scale: 1,
+  duration:0.5,
+  ease:"ease-in"
+})
+.to(".profile-card-link",{
+  opacity:1,
+})
 const scroll2=ScrollTrigger.create({
     trigger:".info-container",
     start:"top top",

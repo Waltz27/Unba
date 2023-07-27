@@ -1,27 +1,30 @@
-@media (max-width: 767px){
-
+@media (max-width: 768px){
+    .minimize-logo{
+        width: 30%!important;;
+    }
 .img-container{
 margin-top: -2rem!important;
 }
+
 .img-wrapper{
 max-width: 55vw!important;
 max-height: 50vh!important;
 }
 .horizontalImg {
-max-width: 50vw!important;
-max-height: 50vh!important;
+    max-width: 30vw;
+    max-height: 40vh!important;
 }
 .one{
-transform: translateX(3.5rem)!important;
+transform: translateX(2.5rem)!important;
 }
 .two{
-transform: translateX(-4.8rem)!important;
+transform: translateX(-3.8rem)!important;
 }
 .three{
-transform: translateX(-2.3rem)!important;
+transform: translateX(-1.3rem)!important;
 }
 .four{
-transform: translateX(-3.7rem)!important;
+transform: translateX(-2.7rem)!important;
 }
 .five{
 transform: translateX(-1rem)!important;
@@ -178,7 +181,7 @@ opacity: 0;
 .img-wrapper .image-link {
 overflow: hidden;
 display: block;
-padding: 3vw ;
+padding: 1vw ;
 background: #efecdb;
 -webkit-box-shadow: 0 10px 50px #5f2f1182;
 -moz-box-shadow: 0 10px 50px #5f2f1182;
@@ -574,8 +577,6 @@ background-size: cover;
 width: 30vw;
 height: 16vw;
 border-radius: 10px;
-margin-top: 30px;
-margin-bottom: 30px;
 position: relative;
 border: 2.5px solid var(--color);
 opacity: 1;
@@ -615,6 +616,7 @@ margin-bottom: 10px;
 height: 50vh;
 margin: auto;
 width: 90vw;
+margin:20px;
 background-color: var(--bkg-color);
 place-self: center;
 border-radius: 20px;

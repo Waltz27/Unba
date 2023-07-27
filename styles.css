@@ -1,11 +1,14 @@
-@media (max-width: 767px){
+@media (max-width: 768px){
 .headerIntro{
 display: none;
 }
 }
-@media (max-width: 1024px){
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
     .welcome-image{
         width: 25vw!important;
+    }
+    .text-container{
+        font-size: 1.5vw!important;
     }
 }
 /*Html/body*/
@@ -635,7 +638,7 @@ transform: translateX(-30px) translateY(-64px)rotate(270deg);
     .TwitterCard.expand .twitter-content{
     opacity: 1;
     width: 60vw;
-    height: 100vh;
+    height: 80vh;
     border: 3px solid var(--border-color);
     border-radius: 20px;
     transition: 3s ease-in-out;
@@ -768,11 +771,9 @@ transform: translateX(-30px) translateY(-64px)rotate(270deg);
     .twitter-tabs-one > div:hover {
     color: var(--accent-color);
     background-color: rgba(var(--accent-color-rgb), 0.1);
-    border-radius: 13px;
+    border-radius: 20px;
+    padding: 20px;
     
-    }
-    .twitter-selected {
-    color: var(--accent-color);
     }
     .twitter-controls {
     margin: auto;
@@ -790,7 +791,7 @@ transform: translateX(-30px) translateY(-64px)rotate(270deg);
 .Youtube-Container{
     height: 100vh;
     position: relative;
-    margin-top: 60vh;
+    margin-top: 100vh;
     }
     .bubbleContainer{
     position: absolute;
@@ -928,6 +929,96 @@ transform: translateX(-30px) translateY(-64px)rotate(270deg);
         cursor: pointer;
         filter: brightness(0.8);
     }
+/*Info*/
+.info-container{
+    background-color: transparent;
+    width: auto;
+    height: 100vh;
+    font-size: 100%;
+    display: grid;
+    place-items: center;
+    font-family: var(--main-font-family);
+    margin-top: 100vh;
+}
+.info-icon{
+    width: auto;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    margin-top: -80vh;
+    opacity: 0;
+}
+.soap-icon{
+    width: 10vw;
+    height: auto;
+    position: absolute;
+    z-index: 999;
+
+}
+.emoji{
+    position: absolute;
+    font-size: 1.5em;
+}
+.soap-background{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.65);
+    -webkit-box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    border: 2px solid white;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    z-index: 0;
+}
+.text-container{
+    position: absolute;
+    scale: 0.5;
+    width: 80vw; 
+    height: 200vh;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.65);
+    -webkit-box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    -moz-box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    opacity: 0;
+    margin-left: 20px;
+    padding: 0 20px;
+    color: var(--color);
+    font-weight: bolder;
+    font-size: 1vw;
+}
+.info-introduction{
+    font-size: 3em;
+}
+.info-content{
+    font-size: 1.5em;
+    margin: 2vh;
+}
+.name,.Activities{
+    font-size: 1.75em;
+}
+.info-section-1{
+    margin-bottom: 5vh;
+}
+.info-player{
+    margin: 10px;
+}
+.profile-card-link{
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   bottom: 0;
+   opacity: 0;
+}
+.profile-image{
+    width: 4vw;
+    height: 4vw;
+}
 
 /*Animations*/
 @keyframes move {
