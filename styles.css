@@ -1013,7 +1013,6 @@ transform: translateX(-30px) translateY(-64px)rotate(270deg);
    left: 50%;
    transform: translate(-50%, -50%);
    bottom: 0;
-   opacity: 0;
 }
 .profile-image{
     width: 4vw;

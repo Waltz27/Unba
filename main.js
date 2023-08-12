@@ -168,9 +168,6 @@ infoTimeline
   duration:0.5,
   ease:"ease-in"
 })
-.to(".profile-card-link",{
-  opacity:1,
-})
 const scroll2=ScrollTrigger.create({
     trigger:".info-container",
     start:"top top",
