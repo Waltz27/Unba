@@ -717,7 +717,7 @@ transform: translateX(-30px) translateY(-64px)rotate(270deg);
     left: 0%;
     border-radius: 50%;
     border: var(--pfp-border) solid var(--bkg-color);
-    background-image: url("https://ik.imagekit.io/4bkho8jgt/profile_dLXI0ntzx.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668391976830");
+    background-image: url("https://ik.imagekit.io/4bkho8jgt/uXXxhdDy_400x400_6iHKM1Dok.jpg?updatedAt=1693584177962");
     background-size: cover;
     }
     .twitter-pfp-two:hover:after {
@@ -772,7 +772,7 @@ transform: translateX(-30px) translateY(-64px)rotate(270deg);
     color: var(--accent-color);
     background-color: rgba(var(--accent-color-rgb), 0.1);
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     
     }
     .twitter-controls {
