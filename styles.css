@@ -860,7 +860,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: 0;
+  transition: 0.3s ease-out;
 }
+
 .profile-image {
   width: 4vw;
   height: 4vw;
